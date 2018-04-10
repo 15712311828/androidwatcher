@@ -5,7 +5,6 @@ import com.androidwatcher.dao.UserMapper;
 import com.androidwatcher.model.User;
 import com.androidwatcher.model.UserExample;
 import com.androidwatcher.util.LoginUtil;
-import com.sun.deploy.net.HttpResponse;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
