@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="androidwatcher:war">
     <output-path>$PROJECT_DIR$/../androidwatcher/target</output-path>
-    <root id="archive" name="androidwatcher-1.0.war">
+    <root id="archive" name="android_watcher.war">
       <element id="artifact" artifact-name="androidwatcher:war exploded" />
     </root>
   </artifact>
