@@ -34,6 +34,7 @@ public class UserController {
 
     @RequestMapping("/name")
     public JsonResult name(){
+        ValidUtil.checkUserLogin();
         String name = userService.name();
         return JsonResult.success(name);
     }
