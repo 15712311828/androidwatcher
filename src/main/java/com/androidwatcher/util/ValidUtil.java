@@ -2,7 +2,7 @@ package com.androidwatcher.util;
 
 
 
-import com.androidwatcher.common.UserContext;
+import com.androidwatcher.common.DeviceContext;
 import com.androidwatcher.exception.BusinessException;
 
 import java.util.List;
@@ -33,8 +33,8 @@ public class ValidUtil {
         }
     }
 
-    public static void checkLogin(){
-        if(null== UserContext.get()){
+    public static void checkDeviceLogin(){
+        if(null== DeviceContext.get()){
             throw new BusinessException("请先登录");
         }
     }

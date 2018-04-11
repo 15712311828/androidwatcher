@@ -1,7 +1,7 @@
 package com.androidwatcher.configurer;
 
 
-import com.androidwatcher.Interceptor.LoginInterceptor;
+import com.androidwatcher.Interceptor.DeviceLoginInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
@@ -11,13 +11,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class WebConfigurer extends WebMvcConfigurerAdapter {
 
     @Bean
-    public LoginInterceptor loginInterceptor() {
-        return new LoginInterceptor();
+    public DeviceLoginInterceptor deviceLoginInterceptor() {
+        return new DeviceLoginInterceptor();
     }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(loginInterceptor()).addPathPatterns("/**");
+        registry.addInterceptor(deviceLoginInterceptor()).addPathPatterns("/**");
         super.addInterceptors(registry);
     }
 

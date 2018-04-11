@@ -4,7 +4,7 @@ package com.androidwatcher.util;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
 
-public class LoginUtil {
+public class DeviceLoginUtil {
 
     public static final String KEY="a6532r";
 

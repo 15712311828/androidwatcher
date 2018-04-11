@@ -3,14 +3,14 @@ package com.androidwatcher.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserExample {
+public class DeviceExample {
     protected String orderByClause;
 
     protected boolean distinct;
 
     protected List<Criteria> oredCriteria;
 
-    public UserExample() {
+    public DeviceExample() {
         oredCriteria = new ArrayList<Criteria>();
     }
 

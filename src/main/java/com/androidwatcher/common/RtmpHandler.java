@@ -44,7 +44,7 @@ public class RtmpHandler {
     }
 
     public static void hold(){
-        String name=UserContext.getName();
+        String name= DeviceContext.getName();
         if(lives.get(name)==null){
             fixedThreadPool.execute(()->start(name));
         }

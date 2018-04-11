@@ -1,6 +1,6 @@
 package com.androidwatcher.model;
 
-public class User {
+public class Device {
     private Integer id;
 
     private String name;

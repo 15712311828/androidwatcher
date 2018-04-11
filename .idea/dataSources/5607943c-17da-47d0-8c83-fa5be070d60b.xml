@@ -7,7 +7,7 @@
       <Visible>1</Visible>
     </schema>
     <schema id="3" parent="1" name="information_schema"/>
-    <table id="4" parent="2" name="user"/>
+    <table id="4" parent="2" name="device"/>
     <column id="5" parent="4" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
