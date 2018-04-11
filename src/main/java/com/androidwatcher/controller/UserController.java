@@ -4,6 +4,7 @@ import com.androidwatcher.common.JsonResult;
 import com.androidwatcher.service.UserService;
 import com.androidwatcher.util.ValidUtil;
 import com.androidwatcher.vo.param.UserAddParam;
+import com.androidwatcher.vo.param.UserLoginParam;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -27,8 +28,8 @@ public class UserController {
     }
 
     @RequestMapping("/login")
-    public JsonResult login(@RequestBody @Valid UserAddParam userAddParam,HttpServletResponse response){
-        userService.login(userAddParam.getName(),userAddParam.getPassword(),response);
+    public JsonResult login(@RequestBody @Valid UserLoginParam userLoginParam, HttpServletResponse response){
+        userService.login(userLoginParam.getName(),userLoginParam.getPassword(),response);
         return JsonResult.success();
     }
 
