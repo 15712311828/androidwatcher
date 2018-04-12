@@ -58,6 +58,9 @@ public class UserService {
     }
 
     public void delete(Integer id){
+        if(id== UserContext.getId()){
+            throw new BusinessException("不能删除自己");
+        }
         userMapper.deleteByPrimaryKey(id);
     }
 }
