@@ -6,6 +6,7 @@ import com.androidwatcher.exception.BusinessException;
 import com.androidwatcher.model.User;
 import com.androidwatcher.service.UserService;
 import com.androidwatcher.util.ValidUtil;
+import com.androidwatcher.vo.UserListVo;
 import com.androidwatcher.vo.param.PageQueryParam;
 import com.androidwatcher.vo.param.UserAddParam;
 import com.androidwatcher.vo.param.UserDeleteParam;
@@ -49,7 +50,7 @@ public class UserController {
     @RequestMapping("/list")
     public JsonResult list(@RequestBody @Valid PageQueryParam pageQueryParam){
         ValidUtil.checkUserLogin();
-        List<User> users=userService.list(pageQueryParam);
+        UserListVo users=userService.list(pageQueryParam);
         return JsonResult.success(users);
     }
 

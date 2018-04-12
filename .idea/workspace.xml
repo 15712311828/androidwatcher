@@ -7,6 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d6799df-a8c0-4cac-9f9f-05a545ff06ee" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/UserListVo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../androidwatcher/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/UserController.java" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/UserController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/UserService.java" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/UserService.java" />
@@ -49,15 +50,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="59" column="35" lean-forward="true" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+            <state relative-caret-position="228">
+              <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1681#1682#0" expanded="true" />
-                <element signature="e#1725#1726#0" expanded="true" />
+                <element signature="e#1758#1759#0" expanded="true" />
+                <element signature="e#1802#1803#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserListVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/UserListVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+            <state relative-caret-position="228">
+              <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,21 +151,6 @@
               <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebConfigurer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/configurer/WebConfigurer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="26" column="79" lean-forward="false" selection-start-line="26" selection-start-column="79" selection-end-line="26" selection-end-column="79" />
-              <folding>
-                <element signature="e#583#584#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#702#703#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -221,8 +219,9 @@
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/param/UserLoginParam.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/param/PageQueryParam.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/param/UserDeleteParam.java" />
-        <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/UserListVo.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/UserService.java" />
+        <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -384,7 +383,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="androidwatcher" type="462c0819:PsiDirectoryNode" />
-              <item name="param" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="androidwatcher" type="b2602c69:ProjectViewProjectNode" />
@@ -570,12 +569,12 @@
       <workItem from="1523362971808" duration="2640000" />
       <workItem from="1523419046431" duration="7288000" />
       <workItem from="1523455236919" duration="7166000" />
-      <workItem from="1523538258758" duration="1388000" />
+      <workItem from="1523538258758" duration="2290000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38610000" />
+    <option name="totallyTimeSpent" value="39512000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-24" y="50" width="1382" height="744" extended-state="0" />
@@ -626,14 +625,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/util/ValidUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -958,10 +949,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/UserListVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        <state relative-caret-position="266">
+          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -970,12 +961,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="59" column="35" lean-forward="true" selection-start-line="59" selection-start-column="35" selection-end-line="59" selection-end-column="35" />
+        <state relative-caret-position="228">
+          <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="11" selection-end-line="56" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1681#1682#0" expanded="true" />
-            <element signature="e#1725#1726#0" expanded="true" />
+            <element signature="e#1758#1759#0" expanded="true" />
+            <element signature="e#1802#1803#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
