@@ -7,6 +7,7 @@ import com.androidwatcher.model.User;
 import com.androidwatcher.model.UserExample;
 import com.androidwatcher.util.UserLoginUtil;
 import com.androidwatcher.util.ValidUtil;
+import com.androidwatcher.vo.UserListVo;
 import com.androidwatcher.vo.param.PageQueryParam;
 import com.github.pagehelper.PageHelper;
 import org.springframework.stereotype.Service;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class UserService {
@@ -52,9 +54,14 @@ public class UserService {
         return UserContext.getName();
     }
 
-    public List<User> list(PageQueryParam pageQueryParam){
+    public UserListVo list(PageQueryParam pageQueryParam){
         PageHelper.startPage(pageQueryParam.getPageNum(),pageQueryParam.getPageSize());
-        return userMapper.selectByExample(new UserExample());
+        List<User> users = userMapper.selectByExample(new UserExample());
+        Long total=userMapper.countByExample(new UserExample());
+        UserListVo userListVo=new UserListVo();
+        userListVo.setTotal(total.intValue());
+        userListVo.setUsers(users.stream().map(user->UserListVo.User.fromUser(user)).collect(Collectors.toList()));
+        return userListVo;
     }
 
     public void delete(Integer id){
