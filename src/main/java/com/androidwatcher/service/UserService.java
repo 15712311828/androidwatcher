@@ -7,10 +7,13 @@ import com.androidwatcher.model.User;
 import com.androidwatcher.model.UserExample;
 import com.androidwatcher.util.UserLoginUtil;
 import com.androidwatcher.util.ValidUtil;
+import com.androidwatcher.vo.param.PageQueryParam;
+import com.github.pagehelper.PageHelper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -47,5 +50,14 @@ public class UserService {
 
     public String name(){
         return UserContext.getName();
+    }
+
+    public List<User> list(PageQueryParam pageQueryParam){
+        PageHelper.startPage(pageQueryParam.getPageNum(),pageQueryParam.getPageSize());
+        return userMapper.selectByExample(new UserExample());
+    }
+
+    public void delete(Integer id){
+        userMapper.deleteByPrimaryKey(id);
     }
 }

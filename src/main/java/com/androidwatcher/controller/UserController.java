@@ -1,9 +1,12 @@
 package com.androidwatcher.controller;
 
 import com.androidwatcher.common.JsonResult;
+import com.androidwatcher.model.User;
 import com.androidwatcher.service.UserService;
 import com.androidwatcher.util.ValidUtil;
+import com.androidwatcher.vo.param.PageQueryParam;
 import com.androidwatcher.vo.param.UserAddParam;
+import com.androidwatcher.vo.param.UserDeleteParam;
 import com.androidwatcher.vo.param.UserLoginParam;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("/user")
@@ -38,5 +42,19 @@ public class UserController {
         ValidUtil.checkUserLogin();
         String name = userService.name();
         return JsonResult.success(name);
+    }
+
+    @RequestMapping("/list")
+    public JsonResult list(@RequestBody @Valid PageQueryParam pageQueryParam){
+        ValidUtil.checkUserLogin();
+        List<User> users=userService.list(pageQueryParam);
+        return JsonResult.success(users);
+    }
+
+    @RequestMapping("/delete")
+    public JsonResult delete(@RequestBody @Valid UserDeleteParam userDeleteParam){
+        ValidUtil.checkUserLogin();
+        userService.delete(userDeleteParam.getId());
+        return JsonResult.success();
     }
 }
