@@ -7,10 +7,7 @@ import com.androidwatcher.model.User;
 import com.androidwatcher.service.UserService;
 import com.androidwatcher.util.ValidUtil;
 import com.androidwatcher.vo.UserListVo;
-import com.androidwatcher.vo.param.PageQueryParam;
-import com.androidwatcher.vo.param.UserAddParam;
-import com.androidwatcher.vo.param.UserDeleteParam;
-import com.androidwatcher.vo.param.UserLoginParam;
+import com.androidwatcher.vo.param.*;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -58,6 +55,13 @@ public class UserController {
     public JsonResult delete(@RequestBody @Valid UserDeleteParam userDeleteParam){
         ValidUtil.checkUserLogin();
         userService.delete(userDeleteParam.getId());
+        return JsonResult.success();
+    }
+
+    @RequestMapping("/changePassword")
+    public JsonResult changePassword(@RequestBody @Valid UserChangePasswordParam userChangePasswordParam){
+        ValidUtil.checkUserLogin();
+        userService.changePassword(userChangePasswordParam.getPassword());
         return JsonResult.success();
     }
 }

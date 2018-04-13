@@ -65,9 +65,19 @@ public class UserService {
     }
 
     public void delete(Integer id){
+        if(!UserContext.getName().equals("root")){
+            throw new BusinessException("只有root用户可以删除其他用户");
+        }
         if(id== UserContext.getId()){
             throw new BusinessException("不能删除自己");
         }
         userMapper.deleteByPrimaryKey(id);
+    }
+
+    public void changePassword(String password){
+        User user=new User();
+        user.setPassword(password);
+        user.setId(UserContext.getId());
+        userMapper.updateByPrimaryKeySelective(user);
     }
 }
