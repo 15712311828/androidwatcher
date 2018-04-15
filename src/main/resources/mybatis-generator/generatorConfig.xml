@@ -49,5 +49,6 @@
         <!-- 指定数据库表 -->
         <table tableName="user"></table>
         <table tableName="device"></table>
+        <table tableName="location"></table>
     </context>
 </generatorConfiguration>
