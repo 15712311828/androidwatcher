@@ -5,7 +5,7 @@
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="deviceId" jdbcType="INTEGER" property="deviceid" />
     <result column="Longitude" jdbcType="REAL" property="longitude" />
-    <result column="dimension" jdbcType="REAL" property="dimension" />
+    <result column="latitude" jdbcType="REAL" property="latitude" />
     <result column="time" jdbcType="TIMESTAMP" property="time" />
   </resultMap>
   <sql id="Example_Where_Clause">
@@ -67,7 +67,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, deviceId, Longitude, dimension, time
+    id, deviceId, Longitude, latitude, time
   </sql>
   <select id="selectByExample" parameterType="com.androidwatcher.model.LocationExample" resultMap="BaseResultMap">
     select
@@ -101,9 +101,9 @@
   </delete>
   <insert id="insert" parameterType="com.androidwatcher.model.Location">
     insert into location (id, deviceId, Longitude, 
-      dimension, time)
+      latitude, time)
     values (#{id,jdbcType=INTEGER}, #{deviceid,jdbcType=INTEGER}, #{longitude,jdbcType=REAL}, 
-      #{dimension,jdbcType=REAL}, #{time,jdbcType=TIMESTAMP})
+      #{latitude,jdbcType=REAL}, #{time,jdbcType=TIMESTAMP})
   </insert>
   <insert id="insertSelective" parameterType="com.androidwatcher.model.Location">
     insert into location
@@ -117,8 +117,8 @@
       <if test="longitude != null">
         Longitude,
       </if>
-      <if test="dimension != null">
-        dimension,
+      <if test="latitude != null">
+        latitude,
       </if>
       <if test="time != null">
         time,
@@ -134,8 +134,8 @@
       <if test="longitude != null">
         #{longitude,jdbcType=REAL},
       </if>
-      <if test="dimension != null">
-        #{dimension,jdbcType=REAL},
+      <if test="latitude != null">
+        #{latitude,jdbcType=REAL},
       </if>
       <if test="time != null">
         #{time,jdbcType=TIMESTAMP},
@@ -160,8 +160,8 @@
       <if test="record.longitude != null">
         Longitude = #{record.longitude,jdbcType=REAL},
       </if>
-      <if test="record.dimension != null">
-        dimension = #{record.dimension,jdbcType=REAL},
+      <if test="record.latitude != null">
+        latitude = #{record.latitude,jdbcType=REAL},
       </if>
       <if test="record.time != null">
         time = #{record.time,jdbcType=TIMESTAMP},
@@ -176,7 +176,7 @@
     set id = #{record.id,jdbcType=INTEGER},
       deviceId = #{record.deviceid,jdbcType=INTEGER},
       Longitude = #{record.longitude,jdbcType=REAL},
-      dimension = #{record.dimension,jdbcType=REAL},
+      latitude = #{record.latitude,jdbcType=REAL},
       time = #{record.time,jdbcType=TIMESTAMP}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
@@ -191,8 +191,8 @@
       <if test="longitude != null">
         Longitude = #{longitude,jdbcType=REAL},
       </if>
-      <if test="dimension != null">
-        dimension = #{dimension,jdbcType=REAL},
+      <if test="latitude != null">
+        latitude = #{latitude,jdbcType=REAL},
       </if>
       <if test="time != null">
         time = #{time,jdbcType=TIMESTAMP},
@@ -204,7 +204,7 @@
     update location
     set deviceId = #{deviceid,jdbcType=INTEGER},
       Longitude = #{longitude,jdbcType=REAL},
-      dimension = #{dimension,jdbcType=REAL},
+      latitude = #{latitude,jdbcType=REAL},
       time = #{time,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=INTEGER}
   </update>

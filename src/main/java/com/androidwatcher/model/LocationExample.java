@@ -285,63 +285,63 @@ public class LocationExample {
             return (Criteria) this;
         }
 
-        public Criteria andDimensionIsNull() {
-            addCriterion("dimension is null");
+        public Criteria andLatitudeIsNull() {
+            addCriterion("latitude is null");
             return (Criteria) this;
         }
 
-        public Criteria andDimensionIsNotNull() {
-            addCriterion("dimension is not null");
+        public Criteria andLatitudeIsNotNull() {
+            addCriterion("latitude is not null");
             return (Criteria) this;
         }
 
-        public Criteria andDimensionEqualTo(Float value) {
-            addCriterion("dimension =", value, "dimension");
+        public Criteria andLatitudeEqualTo(Float value) {
+            addCriterion("latitude =", value, "latitude");
             return (Criteria) this;
         }
 
-        public Criteria andDimensionNotEqualTo(Float value) {
-            addCriterion("dimension <>", value, "dimension");
+        public Criteria andLatitudeNotEqualTo(Float value) {
+            addCriterion("latitude <>", value, "latitude");
             return (Criteria) this;
         }
 
-        public Criteria andDimensionGreaterThan(Float value) {
-            addCriterion("dimension >", value, "dimension");
+        public Criteria andLatitudeGreaterThan(Float value) {
+            addCriterion("latitude >", value, "latitude");
             return (Criteria) this;
         }
 
-        public Criteria andDimensionGreaterThanOrEqualTo(Float value) {
-            addCriterion("dimension >=", value, "dimension");
+        public Criteria andLatitudeGreaterThanOrEqualTo(Float value) {
+            addCriterion("latitude >=", value, "latitude");
             return (Criteria) this;
         }
 
-        public Criteria andDimensionLessThan(Float value) {
-            addCriterion("dimension <", value, "dimension");
+        public Criteria andLatitudeLessThan(Float value) {
+            addCriterion("latitude <", value, "latitude");
             return (Criteria) this;
         }
 
-        public Criteria andDimensionLessThanOrEqualTo(Float value) {
-            addCriterion("dimension <=", value, "dimension");
+        public Criteria andLatitudeLessThanOrEqualTo(Float value) {
+            addCriterion("latitude <=", value, "latitude");
             return (Criteria) this;
         }
 
-        public Criteria andDimensionIn(List<Float> values) {
-            addCriterion("dimension in", values, "dimension");
+        public Criteria andLatitudeIn(List<Float> values) {
+            addCriterion("latitude in", values, "latitude");
             return (Criteria) this;
         }
 
-        public Criteria andDimensionNotIn(List<Float> values) {
-            addCriterion("dimension not in", values, "dimension");
+        public Criteria andLatitudeNotIn(List<Float> values) {
+            addCriterion("latitude not in", values, "latitude");
             return (Criteria) this;
         }
 
-        public Criteria andDimensionBetween(Float value1, Float value2) {
-            addCriterion("dimension between", value1, value2, "dimension");
+        public Criteria andLatitudeBetween(Float value1, Float value2) {
+            addCriterion("latitude between", value1, value2, "latitude");
             return (Criteria) this;
         }
 
-        public Criteria andDimensionNotBetween(Float value1, Float value2) {
-            addCriterion("dimension not between", value1, value2, "dimension");
+        public Criteria andLatitudeNotBetween(Float value1, Float value2) {
+            addCriterion("latitude not between", value1, value2, "latitude");
             return (Criteria) this;
         }
 

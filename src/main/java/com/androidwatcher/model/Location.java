@@ -9,7 +9,7 @@ public class Location {
 
     private Float longitude;
 
-    private Float dimension;
+    private Float latitude;
 
     private Date time;
 
@@ -37,12 +37,12 @@ public class Location {
         this.longitude = longitude;
     }
 
-    public Float getDimension() {
-        return dimension;
+    public Float getLatitude() {
+        return latitude;
     }
 
-    public void setDimension(Float dimension) {
-        this.dimension = dimension;
+    public void setLatitude(Float latitude) {
+        this.latitude = latitude;
     }
 
     public Date getTime() {
