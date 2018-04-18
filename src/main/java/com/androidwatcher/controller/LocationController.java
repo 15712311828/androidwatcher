@@ -5,6 +5,7 @@ import com.androidwatcher.common.JsonResult;
 import com.androidwatcher.model.Location;
 import com.androidwatcher.service.LocationService;
 import com.androidwatcher.util.ValidUtil;
+import com.androidwatcher.vo.LocationVo;
 import com.androidwatcher.vo.param.LocationUploadParam;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,7 +33,7 @@ public class LocationController {
     @RequestMapping("/getAll")
     public JsonResult getAll(){
         ValidUtil.checkUserLogin();
-        List<Location> all = locationService.getAll();
+        List<LocationVo> all = locationService.getAll();
         return JsonResult.success(all);
     }
 }

@@ -7,9 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d6799df-a8c0-4cac-9f9f-05a545ff06ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/LocationVo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../androidwatcher/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/LocationService.java" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/LocationService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/LocationController.java" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/LocationController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../androidwatcher/out/" />
     <ignored path="$PROJECT_DIR$/../androidwatcher/target/" />
@@ -49,7 +48,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LocationService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LocationService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/LocationService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
@@ -73,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LocationController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/LocationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+            <state relative-caret-position="367">
+              <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -214,10 +213,10 @@
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/param/UserChangePasswordParam.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/UserController.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/resources/mybatis-generator/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/LocationController.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/param/LocationUploadParam.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/LocationVo.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/LocationService.java" />
+        <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/LocationController.java" />
       </list>
     </option>
   </component>
@@ -578,12 +577,12 @@
       <workItem from="1523538258758" duration="11295000" />
       <workItem from="1523969010956" duration="1143000" />
       <workItem from="1524041226752" duration="5222000" />
-      <workItem from="1524060359578" duration="900000" />
+      <workItem from="1524060359578" duration="1060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55782000" />
+    <option name="totallyTimeSpent" value="55942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -975,16 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/LocationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="25" column="61" lean-forward="false" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/90a28282/5607943c-17da-47d0-8c83-fa5be070d60b/android_watcher.location">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1014,6 +1003,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/LocationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
