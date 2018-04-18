@@ -7,21 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d6799df-a8c0-4cac-9f9f-05a545ff06ee" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/dao/DeviceMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/dao/LocationMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/dao/UserMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/Device.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/DeviceExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/Location.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/LocationExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/UserExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/resources/mapper/DeviceMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/resources/mapper/LocationMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/resources/mapper/UserMapper.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/.idea/dataSources/5607943c-17da-47d0-8c83-fa5be070d60b.xml" afterPath="$PROJECT_DIR$/../androidwatcher/.idea/dataSources/5607943c-17da-47d0-8c83-fa5be070d60b.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../androidwatcher/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/param/LocationUploadParam.java" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/param/LocationUploadParam.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/LocationService.java" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/LocationService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../androidwatcher/out/" />
     <ignored path="$PROJECT_DIR$/../androidwatcher/target/" />
@@ -61,16 +48,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="logback.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/resources/logback.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="generatorConfig.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/resources/mybatis-generator/generatorConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -84,11 +61,20 @@
       <file leaf-file-name="LocationService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/LocationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="36" column="75" lean-forward="false" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
+            <state relative-caret-position="269">
+              <caret line="37" column="63" lean-forward="true" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="location" pinned="false" current-in-tab="false">
+        <entry file="das://table:/90a28282/5607943c-17da-47d0-8c83-fa5be070d60b/android_watcher.location">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -224,9 +210,9 @@
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/param/UserChangePasswordParam.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/UserController.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/resources/mybatis-generator/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/LocationService.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/LocationController.java" />
         <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/param/LocationUploadParam.java" />
+        <option value="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/LocationService.java" />
       </list>
     </option>
   </component>
@@ -250,7 +236,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -581,15 +567,15 @@
       <workItem from="1523455236919" duration="7166000" />
       <workItem from="1523538258758" duration="11295000" />
       <workItem from="1523969010956" duration="1143000" />
-      <workItem from="1524041226752" duration="300000" />
+      <workItem from="1524041226752" duration="2158000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49960000" />
+    <option name="totallyTimeSpent" value="51818000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -612,7 +598,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24432677" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25642964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -637,14 +623,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/pom.xml" />
     <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/common/RtmpHandler.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -856,7 +834,7 @@
         <state relative-caret-position="133">
           <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -884,7 +862,7 @@
         <state relative-caret-position="190">
           <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -894,7 +872,7 @@
         <state relative-caret-position="209">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="16" selection-end-column="20" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -904,7 +882,7 @@
         <state relative-caret-position="95">
           <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="36" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -914,7 +892,7 @@
         <state relative-caret-position="665">
           <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1005,10 +983,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/90a28282/5607943c-17da-47d0-8c83-fa5be070d60b/android_watcher.location">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/LocationService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="36" column="75" lean-forward="false" selection-start-line="36" selection-start-column="75" selection-end-line="36" selection-end-column="75" />
+        <state relative-caret-position="269">
+          <caret line="37" column="63" lean-forward="true" selection-start-line="37" selection-start-column="63" selection-end-line="37" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

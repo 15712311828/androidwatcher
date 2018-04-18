@@ -34,7 +34,7 @@ public class LocationService {
     public List<Location> getAll(){
         LocationExample locationExample = new LocationExample();
         LocationExample.Criteria criteria = locationExample.createCriteria();
-        criteria.andTimeGreaterThan(new Date(new Date().getTime()-15*1000));
+        criteria.andTimeGreaterThan(new Date(new Date().getTime()-5*60*1000));
         return locationMapper.selectByExample(locationExample);
     }
 
