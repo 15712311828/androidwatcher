@@ -14,7 +14,7 @@ public class TransformController {
     @RequestMapping("/hold")
     public JsonResult hold(){
         ValidUtil.checkDeviceLogin();
-        RtmpHandler.hold();
+        RtmpHandler.hold("--");
         return JsonResult.success();
     }
 }

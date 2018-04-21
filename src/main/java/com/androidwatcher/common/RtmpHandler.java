@@ -43,15 +43,15 @@ public class RtmpHandler {
         },10000,10000);
     }
 
-    public static void hold(){
+    public static void hold(String type){
         String name= DeviceContext.getName();
         if(lives.get(name)==null){
-            fixedThreadPool.execute(()->start(name));
+            fixedThreadPool.execute(()->start(name,type));
         }
         lives.put(name,System.currentTimeMillis());
     }
 
-    private static void start(String name){
+    private static void start(String name,String type){
 
         log.info("thread name {}",Thread.currentThread().getName());
         threads.put(name,Thread.currentThread());
@@ -63,7 +63,7 @@ public class RtmpHandler {
             grabber.start();
             OpenCVFrameConverter.ToIplImage converter = new OpenCVFrameConverter.ToIplImage();
             //如果想要保存图片,可以使用 opencv_imgcodecs.cvSaveImage("hello.jpg", grabbedImage);来保存图片
-            recorder =  FrameRecorder.createDefault("rtmp://118.89.229.227/live/"+name+"handled", 640, 360);
+            recorder =  FrameRecorder.createDefault("rtmp://118.89.229.227/live/"+name+type, 640, 360);
             recorder.setVideoCodec(avcodec.AV_CODEC_ID_H264);
             recorder.setFormat("flv");
             recorder.setFrameRate(15);

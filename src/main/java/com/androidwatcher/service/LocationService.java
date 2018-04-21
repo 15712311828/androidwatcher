@@ -47,7 +47,7 @@ public class LocationService {
         for(LocationVo locationVo:locationVos){
             DeviceExample deviceExample=new DeviceExample();
             DeviceExample.Criteria criteria1 = deviceExample.createCriteria();
-            criteria.andIdEqualTo(locationVo.getDeviceid());
+            criteria1.andIdEqualTo(locationVo.getDeviceid());
             List<Device> devices = deviceMapper.selectByExample(deviceExample);
             if(devices.size()<=0){
                 locationVo.setName("unknown");
