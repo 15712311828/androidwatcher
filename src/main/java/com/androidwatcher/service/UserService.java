@@ -1,19 +1,25 @@
 package com.androidwatcher.service;
 
 import com.androidwatcher.common.UserContext;
+import com.androidwatcher.dao.RsaKeyMapper;
 import com.androidwatcher.dao.UserMapper;
 import com.androidwatcher.exception.BusinessException;
+import com.androidwatcher.model.RsaKey;
 import com.androidwatcher.model.User;
 import com.androidwatcher.model.UserExample;
+import com.androidwatcher.util.RsaUtil;
 import com.androidwatcher.util.UserLoginUtil;
 import com.androidwatcher.util.ValidUtil;
 import com.androidwatcher.vo.UserListVo;
 import com.androidwatcher.vo.param.PageQueryParam;
+import com.androidwatcher.vo.param.UserLoginParam;
 import com.github.pagehelper.PageHelper;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Base64;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -22,6 +28,9 @@ public class UserService {
 
     @Resource
     private UserMapper userMapper;
+
+    @Resource
+    private RsaKeyMapper rsaKeyMapper;
 
     public void add(String name,String password){
         UserExample userExample=new UserExample();
@@ -36,17 +45,25 @@ public class UserService {
         userMapper.insert(user);
     }
 
-    public void login(String name, String password, HttpServletResponse response){
+    public void login(UserLoginParam userLoginPara, HttpServletRequest request,HttpServletResponse response){
+        RsaKey rsaKey = rsaKeyMapper.selectByPrimaryKey(userLoginPara.getRsaKeyId());
+        if(rsaKey==null||rsaKey.getStatus().equals(0)){
+            throw new BusinessException("无效秘钥");
+        }
+        System.out.println(userLoginPara.getPassword());
+        String password= new String(RsaUtil.decrypt(Base64.getDecoder().decode(userLoginPara.getPassword()),RsaUtil.getPrivateKey(rsaKey.getPrivateKey())));
         UserExample userExample=new UserExample();
         UserExample.Criteria criteria = userExample.createCriteria();
-        criteria.andNameEqualTo(name);
+        criteria.andNameEqualTo(userLoginPara.getName());
         criteria.andPasswordEqualTo(password);
         long result=userMapper.countByExample(userExample);
         if(result==0){
             throw new BusinessException("用户名或密码错误");
         }
         else{
-            UserLoginUtil.keepLogin(name,response);
+            UserLoginUtil.keepLogin(userLoginPara.getName(),request,response);
+            rsaKey.setStatus(0);
+            rsaKeyMapper.updateByPrimaryKey(rsaKey);
         }
     }
 

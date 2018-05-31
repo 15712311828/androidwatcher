@@ -9,6 +9,9 @@ import javax.validation.constraints.NotNull;
 public class UserLoginParam {
 
     @NotNull
+    Integer rsaKeyId;
+
+    @NotNull
     String name;
 
     @NotNull

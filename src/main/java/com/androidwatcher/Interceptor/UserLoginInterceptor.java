@@ -25,7 +25,7 @@ public class UserLoginInterceptor  implements HandlerInterceptor {
         if(cookies == null){
             return true;
         }
-        String name= UserLoginUtil.getLoginName(cookies);
+        String name= UserLoginUtil.getLoginName(cookies,httpServletRequest);
         if(name==null){
             return true;
         }

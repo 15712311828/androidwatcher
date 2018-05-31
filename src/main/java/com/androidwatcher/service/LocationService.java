@@ -42,7 +42,7 @@ public class LocationService {
     public List<LocationVo> getAll(){
         LocationExample locationExample = new LocationExample();
         LocationExample.Criteria criteria = locationExample.createCriteria();
-        criteria.andTimeGreaterThan(new Date(new Date().getTime()-5*60*1000));
+        criteria.andTimeGreaterThan(new Date(new Date().getTime()-30*60*1000));
         List<LocationVo> locationVos=locationMapper.selectByExample(locationExample).stream().map(LocationVo::fromLocation).collect(Collectors.toList());
         for(LocationVo locationVo:locationVos){
             DeviceExample deviceExample=new DeviceExample();

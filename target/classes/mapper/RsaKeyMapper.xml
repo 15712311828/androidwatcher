@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.androidwatcher.dao.UserMapper">
-  <resultMap id="BaseResultMap" type="com.androidwatcher.model.User">
+<mapper namespace="com.androidwatcher.dao.RsaKeyMapper">
+  <resultMap id="BaseResultMap" type="com.androidwatcher.model.RsaKey">
     <id column="id" jdbcType="INTEGER" property="id" />
-    <result column="name" jdbcType="VARCHAR" property="name" />
-    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="public_key" jdbcType="VARCHAR" property="publicKey" />
+    <result column="private_key" jdbcType="VARCHAR" property="privateKey" />
+    <result column="status" jdbcType="INTEGER" property="status" />
   </resultMap>
   <sql id="Example_Where_Clause">
     <where>
@@ -65,15 +66,15 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, name, password
+    id, public_key, private_key, status
   </sql>
-  <select id="selectByExample" parameterType="com.androidwatcher.model.UserExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.androidwatcher.model.RsaKeyExample" resultMap="BaseResultMap">
     select
     <if test="distinct">
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from user
+    from rsa_key
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -84,65 +85,76 @@
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
-    from user
+    from rsa_key
     where id = #{id,jdbcType=INTEGER}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from user
+    delete from rsa_key
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <delete id="deleteByExample" parameterType="com.androidwatcher.model.UserExample">
-    delete from user
+  <delete id="deleteByExample" parameterType="com.androidwatcher.model.RsaKeyExample">
+    delete from rsa_key
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <insert id="insert" parameterType="com.androidwatcher.model.User">
+  <insert id="insert" parameterType="com.androidwatcher.model.RsaKey">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into user (name, password)
-    values (#{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR})
+    insert into rsa_key (public_key, private_key, status
+      )
+    values (#{publicKey,jdbcType=VARCHAR}, #{privateKey,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}
+      )
   </insert>
-  <insert id="insertSelective" parameterType="com.androidwatcher.model.User">
+  <insert id="insertSelective" parameterType="com.androidwatcher.model.RsaKey">
     <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
       SELECT LAST_INSERT_ID()
     </selectKey>
-    insert into user
+    insert into rsa_key
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="name != null">
-        name,
+      <if test="publicKey != null">
+        public_key,
       </if>
-      <if test="password != null">
-        password,
+      <if test="privateKey != null">
+        private_key,
+      </if>
+      <if test="status != null">
+        status,
       </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="name != null">
-        #{name,jdbcType=VARCHAR},
+      <if test="publicKey != null">
+        #{publicKey,jdbcType=VARCHAR},
       </if>
-      <if test="password != null">
-        #{password,jdbcType=VARCHAR},
+      <if test="privateKey != null">
+        #{privateKey,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.androidwatcher.model.UserExample" resultType="java.lang.Long">
-    select count(*) from user
+  <select id="countByExample" parameterType="com.androidwatcher.model.RsaKeyExample" resultType="java.lang.Long">
+    select count(*) from rsa_key
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </select>
   <update id="updateByExampleSelective" parameterType="map">
-    update user
+    update rsa_key
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
       </if>
-      <if test="record.name != null">
-        name = #{record.name,jdbcType=VARCHAR},
+      <if test="record.publicKey != null">
+        public_key = #{record.publicKey,jdbcType=VARCHAR},
       </if>
-      <if test="record.password != null">
-        password = #{record.password,jdbcType=VARCHAR},
+      <if test="record.privateKey != null">
+        private_key = #{record.privateKey,jdbcType=VARCHAR},
+      </if>
+      <if test="record.status != null">
+        status = #{record.status,jdbcType=INTEGER},
       </if>
     </set>
     <if test="_parameter != null">
@@ -150,30 +162,35 @@
     </if>
   </update>
   <update id="updateByExample" parameterType="map">
-    update user
+    update rsa_key
     set id = #{record.id,jdbcType=INTEGER},
-      name = #{record.name,jdbcType=VARCHAR},
-      password = #{record.password,jdbcType=VARCHAR}
+      public_key = #{record.publicKey,jdbcType=VARCHAR},
+      private_key = #{record.privateKey,jdbcType=VARCHAR},
+      status = #{record.status,jdbcType=INTEGER}
     <if test="_parameter != null">
       <include refid="Update_By_Example_Where_Clause" />
     </if>
   </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.androidwatcher.model.User">
-    update user
+  <update id="updateByPrimaryKeySelective" parameterType="com.androidwatcher.model.RsaKey">
+    update rsa_key
     <set>
-      <if test="name != null">
-        name = #{name,jdbcType=VARCHAR},
+      <if test="publicKey != null">
+        public_key = #{publicKey,jdbcType=VARCHAR},
       </if>
-      <if test="password != null">
-        password = #{password,jdbcType=VARCHAR},
+      <if test="privateKey != null">
+        private_key = #{privateKey,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
       </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.androidwatcher.model.User">
-    update user
-    set name = #{name,jdbcType=VARCHAR},
-      password = #{password,jdbcType=VARCHAR}
+  <update id="updateByPrimaryKey" parameterType="com.androidwatcher.model.RsaKey">
+    update rsa_key
+    set public_key = #{publicKey,jdbcType=VARCHAR},
+      private_key = #{privateKey,jdbcType=VARCHAR},
+      status = #{status,jdbcType=INTEGER}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>
