@@ -59,7 +59,7 @@ public class SvmUtil {
     }
 
     @SneakyThrows
-    public static double predict(String data){
+    public static String predict(String data){
         String url = SvmUtil.class.getResource("/")+"data.txt.model";
         if(url.startsWith("file:")){
             url=url.substring(5);
@@ -67,6 +67,15 @@ public class SvmUtil {
         System.out.println(url);
         svm_model svm_model = svm.svm_load_model(url);
         double predict = SvmPredict.predict(data, svm_model);
-        return predict;
+        if(predict==1d){
+            return "正常";
+        }
+        if(predict==2d){
+            return "疲惫";
+        }
+        if(predict==3d){
+            return "兴奋";
+        }
+        return "";
     }
 }

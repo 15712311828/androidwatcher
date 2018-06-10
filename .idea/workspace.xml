@@ -131,8 +131,8 @@
       <file leaf-file-name="SvmUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/util/SvmUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+            <state relative-caret-position="227">
+              <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -636,12 +636,12 @@
       <workItem from="1527390842523" duration="17773000" />
       <workItem from="1528201156656" duration="766000" />
       <workItem from="1528460374778" duration="155000" />
-      <workItem from="1528608926104" duration="17146000" />
+      <workItem from="1528608926104" duration="17944000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101588000" />
+    <option name="totallyTimeSpent" value="102386000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1103,8 +1103,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/util/SvmUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
+        <state relative-caret-position="227">
+          <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
