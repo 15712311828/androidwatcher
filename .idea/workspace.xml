@@ -7,43 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6d6799df-a8c0-4cac-9f9f-05a545ff06ee" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/.idea/libraries/Maven__net_sourceforge_jexcelapi_jxl_2_5_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/.idea/libraries/Maven__org_apache_commons_commons_math3_3_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/.idea/libraries/Maven__tw_edu_ntu_csie_libsvm_3_17.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/data.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/controller/HealthController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/service/HealthService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/util/LDAUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/util/SvmUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/util/svm/SvmPredict.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/util/svm/SvmTrain.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/vo/param/HealthStatusParam.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/resources/data.txt.model" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/dao/DeviceMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/dao/LocationMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/dao/RsaKeyMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/dao/UserMapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/Device.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/DeviceExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/Location.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/LocationExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/RsaKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/RsaKeyExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/model/UserExample.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/resources/mapper/DeviceMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/resources/mapper/LocationMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/resources/mapper/RsaKeyMapper.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/resources/mapper/UserMapper.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/.idea/artifacts/androidwatcher_war_exploded.xml" afterPath="$PROJECT_DIR$/../androidwatcher/.idea/artifacts/androidwatcher_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/.idea/dataSources/5607943c-17da-47d0-8c83-fa5be070d60b.xml" afterPath="$PROJECT_DIR$/../androidwatcher/.idea/dataSources/5607943c-17da-47d0-8c83-fa5be070d60b.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../androidwatcher/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/androidwatcher.iml" afterPath="$PROJECT_DIR$/../androidwatcher/androidwatcher.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/pom.xml" afterPath="$PROJECT_DIR$/../androidwatcher/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/resources/mybatis-generator/generatorConfig.xml" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/resources/mybatis-generator/generatorConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/target/androidwatcher/WEB-INF/classes/mybatis-generator/generatorConfig.xml" afterPath="$PROJECT_DIR$/../androidwatcher/target/androidwatcher/WEB-INF/classes/mybatis-generator/generatorConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/target/classes/mybatis-generator/generatorConfig.xml" afterPath="$PROJECT_DIR$/../androidwatcher/target/classes/mybatis-generator/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/util/SvmUtil.java" afterPath="$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/util/SvmUtil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/../androidwatcher/out/" />
     <ignored path="$PROJECT_DIR$/../androidwatcher/target/" />
@@ -167,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/util/SvmUtil.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="64" column="33" lean-forward="false" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+              <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -281,7 +246,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="222" />
     <option name="y" value="92" />
     <option name="width" value="1300" />
@@ -671,15 +636,16 @@
       <workItem from="1527390842523" duration="17773000" />
       <workItem from="1528201156656" duration="766000" />
       <workItem from="1528460374778" duration="155000" />
-      <workItem from="1528608926104" duration="16378000" />
+      <workItem from="1528608926104" duration="17146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100820000" />
+    <option name="totallyTimeSpent" value="101588000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -698,7 +664,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38714993" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38714993" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1138,7 +1104,7 @@
     <entry file="file://$PROJECT_DIR$/../androidwatcher/src/main/java/com/androidwatcher/util/SvmUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="64" column="33" lean-forward="false" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
+          <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

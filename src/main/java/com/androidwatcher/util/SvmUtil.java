@@ -61,8 +61,8 @@ public class SvmUtil {
     @SneakyThrows
     public static double predict(String data){
         String url = SvmUtil.class.getResource("/")+"data.txt.model";
-        if(url.startsWith("file:/")){
-            url=url.substring(6);
+        if(url.startsWith("file:")){
+            url=url.substring(5);
         }
         System.out.println(url);
         svm_model svm_model = svm.svm_load_model(url);
